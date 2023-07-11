@@ -1,56 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="style.css">
   <title>Formulário de Perguntas</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-    }
-
-    h1 {
-      text-align: center;
-    }
-
-    form {
-      max-width: 400px;
-      margin: 0 auto;
-      background-color: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    input[type="text"],
-    input[type="number"] {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      box-sizing: border-box;
-      font-size: 14px;
-    }
-
-    input[type="submit"] {
-      width: 100%;
-      padding: 10px;
-      background-color: #bc33a1;
-      border: none;
-      color: #e2a2cf;
-      border-radius: 3px;
-      cursor: pointer;
-      font-size: 14px;
-    }
-
-    input[type="submit"]:hover {
-      background-color: #45a049;
-    }
-  </style>
 </head>
 <body>
   <h1>Formulário de Perguntas</h1>
@@ -59,24 +11,13 @@
     <input type="text" id="name" required><br><br>
 
     <label for="age">Quantos anos você tem?</label>
-    <input type="number" id="age" required><br><br>
+    <input type="text" id="age" required><br><br>
 
     <label for="language">Qual linguagem de programação você está estudando?</label>
     <input type="text" id="language" required><br><br>
 
     <input type="submit" value="Enviar">
   </form>
-
-  <script>
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-      event.preventDefault();
-      var name = document.getElementById("name").value;
-      var age = document.getElementById("age").value;
-      var language = document.getElementById("language").value;
-
-      var message = "Olá " + name + ", você tem " + age + " anos e já está aprendendo " + language + "!";
-      alert(message);
-    });
-  </script>
+  <script src="formulario.js"></script>
 </body>
 </html>
